@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/lg" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/baseline_account_box_24" />
+
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:hint="Tên đăng nhập"
+            android:paddingStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/silver" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/baseline_password_24" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu"
+            android:paddingStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/silver" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="335dp"
+        android:layout_height="55dp"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:text="Quên mật khẩu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa có tài khoản?"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</LinearLayout>
